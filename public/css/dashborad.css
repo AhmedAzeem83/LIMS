@@ -1,0 +1,43 @@
+\LIMS\public\css\dashboard.css
+.dashboard-action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 2rem 1rem 1rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.2s, transform 0.2s;
+    min-height: 180px;
+}
+.dashboard-action-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    transform: translateY(-4px) scale(1.03);
+    color: #0d6efd;
+}
+.action-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.bg-gradient-primary { background: linear-gradient(135deg, #0d6efd 60%, #6ea8fe 100%); }
+.bg-gradient-success { background: linear-gradient(135deg, #198754 60%, #71dd8a 100%); }
+.bg-gradient-warning { background: linear-gradient(135deg, #ffc107 60%, #ffe082 100%); }
+.bg-gradient-info { background: linear-gradient(135deg, #0dcaf0 60%, #6fe7f7 100%); }
+.bg-gradient-secondary { background: linear-gradient(135deg, #6c757d 60%, #bfc9d1 100%); }
+.bg-gradient-danger { background: linear-gradient(135deg, #dc3545 60%, #ffb3b3 100%); }
+.bg-gradient-dark { background: linear-gradient(135deg, #212529 60%, #495057 100%); }
+.action-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
