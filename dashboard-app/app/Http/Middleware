@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Dashboard</div>
+        <div class="user-settings">User</div>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Reports</li>
+                <li>Analytics</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="live-stats">
+            <div class="card">Total Users: <span id="total-users">1000</span></div>
+            <div class="card">Active Sessions: <span id="active-sessions">200</span></div>
+            <div class="card">Revenue Today: <span id="revenue-today">$500</span></div>
+            <div class="card">Conversion Rate: <span id="conversion-rate">5%</span></div>
+        </section>
+        <section class="charts">
+            <canvas id="lineChart"></canvas>
+            <canvas id="barChart"></canvas>
+        </section>
+        <section class="data-table">
+            <input type="text" id="search" placeholder="Search...">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">User ID</th>
+                        <th onclick="sortTable(1)">Name</th>
+                        <th onclick="sortTable(2)">Email</th>
+                        <th onclick="sortTable(3)">Status</th>
+                        <th onclick="sortTable(4)">Last Active</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Dashboard. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

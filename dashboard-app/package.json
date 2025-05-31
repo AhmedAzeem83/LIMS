@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Title</h1>
+        <div class="user-profile">User</div>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="live-stats">
+            <div class="stat-card">Total Users: <span id="total-users">1000</span></div>
+            <div class="stat-card">Active Sessions: <span id="active-sessions">200</span></div>
+        </section>
+        <section class="charts">
+            <canvas id="myChart"></canvas>
+        </section>
+        <section class="data-table">
+            <input type="text" id="search" placeholder="Search...">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name</th>
+                        <th onclick="sortTable(1)">Email</th>
+                        <th onclick="sortTable(2)">Date Joined</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

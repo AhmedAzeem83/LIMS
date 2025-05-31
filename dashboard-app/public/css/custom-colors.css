@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Dashboard</div>
+        <div class="user-profile">User</div>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li>Dashboard Overview</li>
+                <li>Reports</li>
+                <li>Analytics</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="live-stats">
+            <div class="card">Total Users: 1,234</div>
+            <div class="card">Active Sessions: 456</div>
+            <div class="card">Revenue Today: $789</div>
+            <div class="card">Conversion Rate: 12%</div>
+        </section>
+        <section class="charts">
+            <canvas id="lineChart"></canvas>
+            <canvas id="barChart"></canvas>
+        </section>
+        <section class="data-table">
+            <input type="text" placeholder="Search...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Last Active</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Company</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
